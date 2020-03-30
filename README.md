@@ -8,7 +8,7 @@ JUST `./gradlew build`, `./gradlew bootJar` or `./gradlew bootRun`.
 
 ## Modules
 
-- `bacnekd`: A Spring Boot application to serve static files built from `frontend` module.
+- `backend`: A Spring Boot application to serve static files built from `frontend` module.
 - `frontend`: A React application created using the [create-react-app](https://github.com/facebook/create-react-app).
 
 ## Builds
