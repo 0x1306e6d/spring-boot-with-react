@@ -30,3 +30,11 @@ dependencies {
 test {
     useJUnitPlatform()
 }
+
+tasks.withType(ProcessResources) {
+    dependsOn(':frontend:npm_run_build')
+
+    from('../frontend/build') {
+        into('static')
+    }
+}
