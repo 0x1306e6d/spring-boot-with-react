@@ -1,3 +1,16 @@
 plugins {
     id "com.github.node-gradle.node" version "2.2.3"
 }
+
+task clean {
+    group = 'build'
+
+    delete('build')
+}
+
+task build {
+    group = 'build'
+
+    dependsOn('clean')
+    dependsOn('npm_run_build')
+}
